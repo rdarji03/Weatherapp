@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Update</title>
+</head>
+
+<body>
+    <h1 class="head">Fetch The Weather Update</h1>
+    <div class="search">
+        <input type="text" placeholder="Enter City Name" id="inp-data">
+        <button id="searchbtn"> <img src="./icons/icons8-search-48.png" alt=""></button>
+    </div>
+    <div class="error">
+        <h2 class="errormsg" style="color: white ;text-align:center;"></h2>
+    </div>
+    <div class="container">
+        <div id="weather_wrapper">
+            <div class="weatherCard">
+                <div class="currentTemp">
+                    <span class="temp">----&deg;</span>
+                    <span class="location">Location</span>
+                </div>
+                <div class="currentWeather">
+                    <div class="info">
+                        <span class="rain">Description: ----</span>
+                        <span class="rain" style="margin: 20px 0;">Pressure: ----</span>
+                        <span class="rain">Humidity: ----</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="iconbox">
+            <img src="" alt="" class="conditions">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
